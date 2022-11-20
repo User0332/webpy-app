@@ -1,0 +1,27 @@
+.calculator-button {
+	background-color: darkgray;
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#calc-input {
+	resize: none;
+	height: 20px;
+	width: 205px;
+	font-size: large;
+	background-color: #AFF0F0;
+	border-color: dimgrey;
+	border-radius: 10px;
+}
+
+#submit {
+	background-color: darkgray;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
