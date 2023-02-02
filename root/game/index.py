@@ -1,6 +1,11 @@
-from flask import Flask, render_template, session, redirect
+import webpy
+from flask import Flask
 
 def handler(app: Flask, *args):
+	from flask import session, redirect
+
 	if not session.get("username"): return redirect('/')
 	
-	return render_template("game.html")
+	document = webpy.documentify("game.html")
+
+	return document._stringify()

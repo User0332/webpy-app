@@ -1,4 +1,11 @@
-const player = document.getElementById("player")
+const playerPos = {
+	x: 0,
+	y: 0
+}
+
+const gameboard = [
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+]
 
 window.addEventListener("keydown", (e) => {
 	e.preventDefault()
@@ -7,16 +14,19 @@ window.addEventListener("keydown", (e) => {
 
 	switch (key) {
 		case "ArrowUp":
-			player.y+=1
+			playerPos.y+=1
 			break
 
 		case "ArrowDown":
+			playerPos.y-=1
 			break
 
 		case "ArrowLeft":
+			playerPos.x-=1
 			break
 
 		case "ArrowRight":
+			playerPos.x+=1
 			break
 
 		default: break

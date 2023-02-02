@@ -1,7 +1,9 @@
 import webpy
-from flask import Flask, request, session
+from flask import Flask
 
 def handler(app: Flask, *args):
+	from flask import request, session
+
 	username, password = \
 		request.json.get("username"), request.json.get("password")
 
