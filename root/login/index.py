@@ -1,4 +1,5 @@
 import webpy
+from pysite.tags import *
 from flask import Flask
 
 def handler(app: Flask, *args):

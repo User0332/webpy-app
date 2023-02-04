@@ -2,7 +2,7 @@ import webpy
 from flask import Flask
 
 def handler(app: Flask, *args):
-	from flask import render_template, session, redirect
+	from flask import session, redirect
 
 	if not session.get("username"): return redirect('/')
 	

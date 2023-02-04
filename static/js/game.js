@@ -1,3 +1,7 @@
+const gameTitle = document.getElementById("gametitle")
+const username = gameTitle.attributes.getNamedItem("name").value
+gameTitle.textContent = `${username}'s Game!`
+
 const playerPos = {
 	x: 0,
 	y: 0
